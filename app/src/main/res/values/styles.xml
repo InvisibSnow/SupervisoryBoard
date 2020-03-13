@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#ffffff</item>
+        <item name="colorPrimaryDark">#FEDF04</item>
+        <item name="colorAccent">#838383</item>
+    </style>
+
+    <style name="MyTextStyle" >
+        <item name="android:color">@color/black</item>
+        <item name="android:textSize">16sp</item>
+
+    </style>
+
+    <style name="MyImageButtonStyle" >
+        <item name="android:layout_width">@dimen/im_btn_size</item>
+        <item name="android:layout_height">@dimen/im_btn_size</item>
+        <item name="android:background">@null</item>
+    </style>
+
+</resources>

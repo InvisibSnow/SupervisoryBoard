@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <variable
+            name="toolbar"
+            type="com.supervisory.board.ui.activity.main.MainActivityVM" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/image_logo_width"
+                android:layout_height="@dimen/image_logo_height"
+                android:background="@drawable/redisign_ic_dtek_logo"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                />
+
+            <ImageButton
+                android:id="@+id/im_btn_setting"
+                style="@style/MyImageButtonStyle"
+                android:src="@drawable/ic_settings"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                style="@style/MyImageButtonStyle"
+                android:src="@drawable/ic_notification"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/im_btn_setting"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:layout_width="@dimen/fr_layout_notification_size"
+                android:layout_height="@dimen/fr_layout_notification_size"
+
+                android:layout_marginTop="@dimen/fr_layout_notification_margin"
+                android:layout_marginEnd="@dimen/fr_layout_notification_margin"
+                android:background="@drawable/ic_ellipse"
+
+                app:layout_constraintEnd_toStartOf="@id/im_btn_setting"
+                app:layout_constraintTop_toTopOf="@id/im_btn_setting"
+
+                android:visibility="@{toolbar.testModel.count ? View.VISIBLE : View.GONE, default=gone }"
+                >
+
+                <TextView
+                    style="@style/MyTextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="6sp"
+
+                    android:text="@{String.valueOf(toolbar.testModel.notificationsCount)}"
+
+                    tools:ignore="SmallSp"
+                    tools:text="99" />
+
+            </FrameLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </Toolbar>
+
+</layout>

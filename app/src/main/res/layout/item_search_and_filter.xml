@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="searchFilter"
+            type="com.supervisory.board.ui.activity.main.MainActivityVM" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin"
+        android:background="@drawable/bg_search"
+        >
+
+        <ImageButton
+            android:id="@+id/ib_filter"
+            style="@style/MyImageButtonStyle"
+            android:src="@drawable/ic_filter"
+
+            android:layout_width="@dimen/im_btn_size_small"
+            android:layout_height="@dimen/im_btn_size_small"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <EditText
+            style="@style/MyTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/text_search"
+            android:layout_marginStart="8dp"
+
+            android:text="@={searchFilter.searchText}"
+
+            app:layout_constraintStart_toEndOf="@+id/ib_filter"
+            app:layout_constraintEnd_toStartOf="@+id/ib_search"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            />
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            style="@style/MyImageButtonStyle"
+            android:src="@drawable/ic_search"
+
+            android:layout_width="@dimen/im_btn_size_small"
+            android:layout_height="@dimen/im_btn_size_small"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:onClick="@{()-> searchFilter.startSearch()}"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "510632114131",
+    "firebase_url": "https://supervisoryboard-4fa6c.firebaseio.com",
+    "project_id": "supervisoryboard-4fa6c",
+    "storage_bucket": "supervisoryboard-4fa6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510632114131:android:4cdf5be52e63365d9e6126",
+        "android_client_info": {
+          "package_name": "com.supervisory.board"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510632114131-4u5pg2mca7vcrmqksgqv93vjr7i7bi1l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.supervisory.board",
+            "certificate_hash": "9893858792f837fd50771d842cd278f51733e090"
+          }
+        },
+        {
+          "client_id": "510632114131-afndslj105pqojeh6nf40cc9otg63le1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoRBWxi6RTPoZHm1PNCEovM8tvDyZG8B8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510632114131-afndslj105pqojeh6nf40cc9otg63le1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "510632114131-k3j3s9maku8gagd31nqr79m8l93f8ei4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.dtekservices.supervisoryboard"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

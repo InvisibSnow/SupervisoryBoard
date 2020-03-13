@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_grey">#f9f9f9</color>
+    <color name="bg_divider">#DADADA</color>
+    <color name="black">#000000</color>
+</resources>
