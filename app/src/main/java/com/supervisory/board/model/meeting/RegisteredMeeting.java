@@ -25,14 +25,6 @@ public class RegisteredMeeting extends BaseObservable {
     private long id;
 
     @Expose
-    @SerializedName("DateEnd")
-    private Date dateEnd;
-
-    @Expose
-    @SerializedName("DateStart")
-    private Date dateStart;
-
-    @Expose
     @SerializedName("Documents")
     private List<Document> documents;
 
@@ -58,14 +50,6 @@ public class RegisteredMeeting extends BaseObservable {
 
     public long getId() {
         return id;
-    }
-
-    public Date getDateEnd() {
-        return dateEnd;
-    }
-
-    public Date getDateStart() {
-        return dateStart;
     }
 
     public List<Document> getDocuments() {

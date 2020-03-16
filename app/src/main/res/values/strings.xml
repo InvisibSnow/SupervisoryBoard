@@ -6,7 +6,8 @@
 
     <string name="text_in_person_meetings">Очные заседания</string>
     <string name="text_in_person_meeting">Очное заседание</string>
-    <string name="text_current_meetings">Текущие заседания</string>
+    <string name="text_current_meetings">ТЕКУЩИЕ ЗАСЕДАНИЯ</string>
+    <string name="text_archive_meetings">АРХИВ</string>
     <string name="text_date_and_time">Дата и время проведения</string>
     <string name="text_agenda">Повестка дня</string>
     <string name="text_number">№</string>

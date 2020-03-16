@@ -1,5 +1,7 @@
 package com.supervisory.board.ui.fragment.meeting;
 
+import android.util.Log;
+
 import androidx.databinding.BindingAdapter;
 import androidx.databinding.ObservableBoolean;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -20,6 +22,7 @@ public class MeetingListFragmentVM extends MyFragmentViewModel<MeetingListFragme
     }
 
     void setRegisteredMeetingsData(List<RegisteredMeeting> dataList){
+        Log.d("MyLOG","RegisteredMeeting set");
         meetingListAdapter.setDataList(dataList);
     }
 

@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.Date;
+import java.util.List;
 
 public class Document {
 
@@ -21,7 +22,7 @@ public class Document {
 
     @Expose
     @SerializedName("Comments")
-    private long comments;
+    private List<Comment> comments;
 
     @Expose
     @SerializedName("FileSize")
@@ -51,7 +52,7 @@ public class Document {
         return author;
     }
 
-    public long getComments() {
+    public List<Comment> getComments() {
         return comments;
     }
 

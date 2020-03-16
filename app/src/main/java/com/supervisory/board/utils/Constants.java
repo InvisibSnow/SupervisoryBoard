@@ -2,7 +2,7 @@ package com.supervisory.board.utils;
 
 public class Constants {
 
-    public static final String TOKEN = "736f09f4-42a4-409c-89fd-8a1b94ba9354";
+    public static final String TOKEN = "c50885d8-854d-4c71-bbb6-8809288210f5";
     public static final String API_AUTHORITY = "Authority";
 
     public static final String API_BASE_URL = "https://mobile.dtek.com/translator/meetings/";

@@ -62,9 +62,9 @@
 
             app:layout_constraintTop_toBottomOf="@+id/tab_layout"
             app:layout_constraintBottom_toTopOf="@+id/bottom_toolbar"
-
-            app:viewPager="@{viewModel}"/>
-
+            app:viewPager="@{viewModel}"
+            />
+<!--        app:viewPager="@{viewModel}"-->
 <!--        <androidx.fragment.app.FragmentContainerView-->
 <!--            android:id="@+id/fragment"-->
 <!--            android:layout_width="match_parent"-->
